@@ -1,0 +1,125 @@
+.board {
+    background: #bdbdbd;
+    border-bottom: 2px solid #7b7b7b;
+    border-left: 2px solid white;
+    border-right: 2px solid #7b7b7b;
+    border-top: 2px solid white;
+    display: inline-block;
+    font: bold 12px/16px sans-serif;
+    margin-top: 100px;
+    padding: 6px 6px 0;
+}
+
+.board__hublot {
+    border-bottom: 2px solid white;
+    border-left: 2px solid #7b7b7b;
+    border-right: 2px solid white;
+    border-top: 2px solid #7b7b7b;
+    margin-bottom: 6px;
+    padding: 3px 5px 0;
+    text-align: center;
+}
+.board__hublot::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.board__hublot .board__counter:first-child {float: left;}
+.board__hublot .board__counter:last-child {float: right;}
+
+.board__counter {
+    border-spacing: 0;
+    display: table;
+    margin: 2px 1px 1px;
+}
+
+.board__number {
+    background: url(./sprite-sapper.gif) no-repeat 0 0;
+    display: table-cell;
+    height: 23px;
+    width: 13px;
+}
+.board__number_1 {background-position: -13px 0;}
+.board__number_2 {background-position: -26px 0;}
+.board__number_3 {background-position: -39px 0;}
+.board__number_4 {background-position: -52px 0;}
+.board__number_5 {background-position: -65px 0;}
+.board__number_6 {background-position: -78px 0;}
+.board__number_7 {background-position: -91px 0;}
+.board__number_8 {background-position: -104px 0;}
+.board__number_9 {background-position: -117px 0;}
+
+.board__face {
+    background: url(./sprite-sapper.gif) no-repeat 0 -55px;
+    display: inline-block;
+    height: 26px;
+    width: 26px;
+}
+
+.board__face_regular {background-position: 0 -55px;}
+.board__face_pressed {background-position: -26px -55px;}
+.board__face_warning {background-position: -52px -55px;}
+.board__face_dead {background-position: -78px -55px;}
+.board__face_win {background-position: -104px -55px;}
+
+.board__table {
+    border-collapse: separate;
+    border-bottom: 2px solid white;
+    border-left: 2px solid #7b7b7b;
+    border-right: 2px solid white;
+    border-top: 2px solid #7b7b7b;
+    border-spacing: 0;
+    display: table;
+    margin: 0 auto;
+}
+.board__row {
+    display: table-row;
+}
+.board__cell {
+    background: url(./sprite-sapper.gif) no-repeat 0 -39px;
+    display: table-cell;
+    height: 16px;
+    width: 16px;
+}
+
+.board__cell_pressed, .board__cell_open {
+    background-position: 0 -23px;
+}
+
+.board__cell_level_1 {
+    background-position: -16px -23px;
+}
+.board__cell_level_2 {
+    background-position: -32px -23px;
+}
+.board__cell_level_3 {
+    background-position: -48px -23px;
+}
+.board__cell_level_4 {
+    background-position: -64px -23px;
+}
+.board__cell_level_5 {
+    background-position: -80px -23px;
+}
+.board__cell_level_6 {
+    background-position: -96px -23px;
+}
+.board__cell_level_7 {
+    background-position: -112px -23px;
+}
+.board__cell_level_8::after {
+    background-position: -128px -23px;
+}
+
+.board__cell_flag {
+    background-position: -16px -39px;
+}
+.board__cell_bomb {
+    background-position: -64px -39px;
+}
+.board__cell_blown {
+    background-position: -32px -39px;
+}
+.board__cell_wrong {
+    background-position: -48px -39px;
+}

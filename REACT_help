@@ -1,0 +1,21 @@
+1. Render occurs only in two methods: "construct" and "setState" ?
+2. setState may receive two arguments: 1. Object that will replace current state, 2.1. arrowed function with two arguments: prevState and input props (for async, i guess) OR 2.2. standard function with return statement that will replace current Component state
+3. onClick => adEventListener('click', ...); onClickCapture => addEventListener('click', ..., true)
+4. Event Table -> https://reactjs.org/docs/events.html
+5. There is a three ways to define an event handler:
+    1. Bind : this.handleClick = this.handleClick.bind(this) or in JSX: <Button onClick={this.handleClick.bind(id)}
+    2. Arrowed method in Component declaration: handleClick = () => {...}
+    3. inline JSX style: <Button onClick={() => {...}} . This is desirable because React allocate memory for each instance of Component
+6. HINT: we can use simple "if" operator in JSX as shown below
+    <h1>Some title</h1>
+    {user.isLogged === true &&
+        <LoginPanel user={user}/>
+    }
+7. If we want not showing Component from itself even if it's Parent tries to render it, we can return null in render method
+8. In multiple form inputs we can use these syntax:
+    this.setState({
+        [name]: value
+    })
+
+
+

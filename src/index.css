@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'pixelzim3x5_bold';
+    src: url('./Sapper/font/pzim3x5b-webfont.eot');
+    src: url('./Sapper/font/pzim3x5b-webfont.eot?#iefix') format('embedded-opentype'),
+    url('./Sapper/font/pzim3x5b-webfont.woff2') format('woff2'),
+    url('./Sapper/font/pzim3x5b-webfont.woff') format('woff'),
+    url('./Sapper/font/pzim3x5b-webfont.ttf') format('truetype'),
+    url('./Sapper/font/pzim3x5b-webfont.svg#pixelzim3x5_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'pixelzim3x5_bold', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: black;
+    font-family: 'pixelzim3x5_bold', sans-serif;
+    text-align: center
+}
+button, input, textarea, select {
+    background: #bdbdbd;
+    border-bottom: 2px solid #7b7b7b;
+    border-left: 2px solid white;
+    border-right: 2px solid #7b7b7b;
+    border-top: 2px solid white;
+    cursor: pointer;
+    display: block;
+    margin: 10px 0;
+    min-width: 200px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.init-screen {
+    background: #bdbdbd;
+    border-bottom: 2px solid #7b7b7b;
+    border-left: 2px solid white;
+    border-right: 2px solid #7b7b7b;
+    border-top: 2px solid white;
+    border-spacing: 6px;
+    display: table;
+    margin: 100px auto 0;
+}
+.init-screen__cell {
+    border-bottom: 2px solid white;
+    border-left: 2px solid #7b7b7b;
+    border-right: 2px solid white;
+    border-top: 2px solid #7b7b7b;
+    display: table-cell;
+    padding: 20px;
+    vertical-align: middle;
+}
+.config {
+    white-space: nowrap;
+}
+.config__row {
+    position: relative;
+    text-align: left;
+    padding: 10px;
+}
+.config__row > input {
+    background: transparent;
+    border: 2px solid transparent;
+    color: transparent;
+    left: 0;
+    height: 100%;
+    outline: none;
+    position: absolute;
+    width: 100%;
+    top: -10px;
+}
+.config__row > input:focus {
+    border-bottom: 2px solid #7b7b7b;
+    border-left: 2px solid white;
+    border-right: 2px solid #7b7b7b;
+    border-top: 2px solid white;
+}
+.config__row > legend {
+    color: white;
+    display: block;
+    position: relative;
+}
+.config__error {
+    color: red;
+    left: 60px;
+    position: absolute;
+    top: 50%;
+}
